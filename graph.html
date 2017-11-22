@@ -1,0 +1,35 @@
+<!DOCType HTML>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Spatial Graphs</title>
+	<!-- <link href="style.css" rel="stylesheet"> --!>
+  <style type="text/css" media="screen">
+    body { background:#eee; margin:1em; text-align:center; }
+    canvas { display:block; margin:1em auto; background:#fff; border:1px solid #ccc; z-index:-1; }
+  </style>
+	<script src="graph.js"></script>
+</head>
+
+<body>
+<p>Double click to add vertices. Click on a vertex to select it. While a vertex is selected, clicking on another vertex will create an edge between the two vertices. Double clicking on an edge will create a break there. Double clicking on an intersection will layer it.</p>
+<p>Pressing 'd' will delete the currently selected object. Pressing 'c' will clear the canvas. Pressing 'u' will undo the last action.</p> 
+<p> Pressing 'i' will toggle the size of the edge breaks. Pressing 'n' will toggle the vertex labels. </p>
+<canvas tabindex='1' id="canvas" width="700" height="500">test</canvas>
+<div id="buttonWrapper">
+	<input type="button" id="plus" value="+"><input type="button" id="minus" value="-">          
+</div>
+<image id="image"></image>
+<div>
+Width: <input type='text' id="width" value='700'>
+Height:<input type='text' id="height" value='500'>
+</div>
+<input type="file" id="files" />
+<button id="save_button">Save text file</button>
+<p id="edgeModeDisplay"></p>
+</body>
+</html>
+
+
+
